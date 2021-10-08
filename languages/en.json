@@ -1,0 +1,44 @@
+{
+    "menu":{
+        "about":"About",
+        "features":"Features",
+        "projects":"Projects",
+        "contact":"Contact"
+    },
+    "header":{
+        "my_name":"Metleb RUSTEMOV",
+        "my_work":"Programmer",
+        "my_portfolio":"My Portfolio",
+        "my_skills":"My Skills"
+    },
+    "features":{
+        "feature_fast":"Fast",
+        "feature_fast_text":"Execution of orders in the shortest time",
+        "feature_resp":"Responsive",
+        "feature_resp_text":"Lightweight designs responsive to all screens",
+        "feature_int":"Intuitive",
+        "feature_int_text":"You already know how to use",
+        "feature_dyn":"Dynamic",
+        "feature_dyn_text":"Suitable for the needs of the time"
+    },
+    "about":{
+        "about_me":"About me",
+        "who_i_am":"Who am I?",
+        "about_me_text":"I was born in Azerbaijan. I finished school, but I dropped out of university. Why? I realized that this was no more profitable. Then I devoted myself to computers. I started the adventure on the Internet. Then I learned Java on Android. Python became my next friend. My acquaintance with Unix has been going on for a long time. I am sure that this path is endless.",
+        "proficent":"Proficient (6+ years):",
+        "expert":"Expert (3+ years):",
+        "learning":"Learning (1+ years):"
+    },
+    "projects":{
+        "my_projs":"My projects",
+        "w2m_about":"Music sharing system running on the server. Written with Python's Flask framework.",
+        "w2p_about":"A simple and easy to use application for reliable protection and management of user passwords for various accounts."
+    },
+    "contact":{
+        "contact_me":"Contact me",
+        "c_n_text":"Name",
+        "c_e_text":"Email address",
+        "c_m_text":"Message",
+        "c_b_text":"Send"
+    }
+}

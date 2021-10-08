@@ -1,0 +1,44 @@
+{
+    "menu":{
+        "about":"Haqqında",
+        "features":"Xüsusiyyətləri",
+        "projects":"Layihələr",
+        "contact":"Əlaqə"
+    },
+    "header":{
+        "my_name":"Metleb RUSTEMOV",
+        "my_work":"Proqramçı",
+        "my_portfolio":"Mənim Portfoliom",
+        "my_skills":"Bacarıqlarım"
+    },
+    "features":{
+        "feature_fast":"Tez",
+        "feature_fast_text":"Sifarişlərin ən qısa müddətdə icrası",
+        "feature_resp":"Responsive",
+        "feature_resp_text":"Bütün ekranlara cavab verən yüngül dizaynlar",
+        "feature_int":"Intuitiv",
+        "feature_int_text":"Necə istifadə edəcəyinizi artıq bilirsiniz",
+        "feature_dyn":"Dinamik",
+        "feature_dyn_text":"Zamanın tələblərinə uyğun"
+    },
+    "about":{
+        "about_me":"Mənim haqqımda",
+        "who_i_am":"Mən kiməm?",
+        "about_me_text":"Mən Azərbaycanda anadan olmuşam. Məktəbi bitirdim, amma universiteti tərk etdim. Niyə? Bunun daha qazanclı olmadığını başa düşdüm. Sonra özümü kompüterə həsr etdim. Macəraya İnternetdə başladım. Sonra Android -də Java öyrəndim. Python mənim növbəti dostum oldu. Unix ilə tanışlığım uzun müddətdir davam edir. Əminəm ki, bu yol sonsuzdur.",
+        "proficent":"Usta (6+ il):",
+        "expert":"Mütəxəssis (3+ il):",
+        "learning":"Yeni Öyrənmə (1+ il):"
+    },
+    "projects":{
+        "my_projs":"Layihələrim",
+        "w2m_about":"Serverdə işləyən musiqi paylaşma sistemi. Python Flask çərçivəsi ilə yazılmışdır.",
+        "w2p_about":"Müxtəlif hesablar üçün istifadəçi parollarının etibarlı qorunması və idarə edilməsi üçün sadə və istifadəsi asan bir tətbiq."
+    },
+    "contact":{
+        "contact_me":"Mənimlə əlaqə saxlayın",
+        "c_n_text":"Adı",
+        "c_e_text":"E -poçt ünvanı",
+        "c_m_text":"Mesaj",
+        "c_b_text":"Göndər"
+    }
+}

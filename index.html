@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
   <!-- MDB -->
   <link rel="stylesheet" href="css/mdb.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -43,16 +44,16 @@
           <!-- Left links -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#features">Features</a>
+              <a class="nav-link" href="#features" id="menu_features"></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#about" id="menu_about"></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#projects" id="menu_projects"></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact" id="menu_contact"></a>
             </li>
           </ul>
           <!-- Left links -->
@@ -60,15 +61,14 @@
         <!-- Collapsible wrapper -->
 
         <!-- Right elements -->
-        <div class="d-flex align-items-center me-5">
-          <a href="" class="text-reset me-1">
+        <div class="d-flex align-items-center">
+          <!-- Country Flags-->
+          <a href="#" class="text-reset me-1" onclick="setLanguage('az')">
             <i class="flag flag-azerbaijan"></i>
           </a>
-          <a href="" class="text-reset">
+          <a href="#" class="text-reset me-5" onclick="setLanguage('en')">
             <i class="flag flag-united-kingdom"></i>
           </a>
-        </div>
-        <div class="d-flex align-items-center">
           <!--Sacial Icons -->
           <a class="text-reset me-3" href="https://www.facebook.com/metleb.rustemov.739/">
             <i class="fab fa-facebook-f"></i>
@@ -98,10 +98,10 @@
       <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
         <div class="d-flex justify-content-center align-items-center h-100">
           <div class="text-white">
-            <h1 class="mb-3">Metleb RUSTEMOV</h1>
-            <h4 class="mb-3">Programmer</h4>
-            <a class="btn btn-outline-light btn-lg m-1" href="#" role="button">My Skills</a>
-            <a class="btn btn-outline-light btn-lg m-1" href="#projects" role="button">My Portfolio</a>
+            <h1 class="mb-3" id="header_my_name"></h1>
+            <h4 class="mb-3" id="header_my_work"></h4>
+            <a class="btn btn-outline-light btn-lg m-1" href="#" role="button" id="header_my_skills"></a>
+            <a class="btn btn-outline-light btn-lg m-1" href="#projects" role="button" id="header_my_portfolio"></a>
           </div>
         </div>
       </div>
@@ -112,27 +112,27 @@
     <div class="container">
       <!-- Section: Features -->
       <section class="text-center" id="features">
-        <h3 class="mb-5"><strong>Features</strong></h3>
+        <h3 class="mb-5"><strong id="feature_h3"></strong></h3>
         <div class="row">
           <div class="col-lg-3 col-md-6">
             <i class="fas fa-tachometer-alt fa-3x text-primary"></i>
-            <h5 class="my-4">Fast</h5>
-            <p class="mb-md-3">Execution of orders in the shortest time</p>
+            <h5 class="my-4" id="feature_f"></h5>
+            <p class="mb-md-3" id="feature_f_text"></p>
           </div>
           <div class="col-lg-3 col-md-6">
             <i class="fas fa-mobile-alt fa-3x text-primary"></i>
-            <h5 class="my-4">Responsive</h5>
-            <p class="mb-md-3">Lightweight designs responsive to all screens</p>
+            <h5 class="my-4" id="feature_r"></h5>
+            <p class="mb-md-3" id="feature_r_text"></p>
           </div>
           <div class="col-lg-3 col-md-6">
             <i class="far fa-lightbulb fa-3x text-primary"></i>
-            <h5 class="my-4">Intuitive</h5>
-            <p class="mb-md-3">You already know how to use</p>
+            <h5 class="my-4" id="feature_i"></h5>
+            <p class="mb-md-3" id="feature_i_text"></p>
           </div>
           <div class="col-lg-3 col-md-6">
             <i class="fas fa-rocket fa-3x text-primary"></i>
-            <h5 class="my-4">Dynamic</h5>
-            <p class="mb-md-3">Like a gentle breeze</p>
+            <h5 class="my-4" id="feature_d"></h5>
+            <p class="mb-md-3" id="feature_d_text"></p>
           </div>
         </div>
       </section>
@@ -140,35 +140,26 @@
       <hr class="my-5">
       <!-- Section: About me -->
       <section class="text-center" id="about">
-        <h3 class="my-5">
-          <strong>
-            About me
-          </strong>
-        </h3>
+        <h3 class="my-5"><strong id="about_h3"></strong></h3>
         <div class="row">
           <div class="col-md-6 mb-4">
             <img src="img/20210822_162320.jpg" alt="Avatar" class="rounded-circle shadow-2-strong mb-4">
-            <p><strong>Who am I?</strong></p>
-            <p>I was born in Azerbaijan. I finished school, but I dropped out of university. 
-              Why? I realized that this was no more profitable. Then I devoted myself to computers. 
-              I started the adventure on the Internet. Then I learned Java on Android. Python became my next friend. 
-              My acquaintance with Unix has been going on for a long time.
-              I am sure that this path is endless.
-            </p>
+            <p><strong id="about_who"></strong></p>
+            <p id="about_text"></p>
             <!-- Facebook -->
-            <a style="background-color: #3b5998;" href="https://www.facebook.com/metleb.rustemov.739/" role="button" class="btn btn-primary btn-floating m-1"><i
-                class="fab fa-facebook-f fa-lg"></i></a>
+            <a style="background-color: #3b5998;" href="https://www.facebook.com/metleb.rustemov.739/" role="button"
+              class="btn btn-primary btn-floating m-1"><i class="fab fa-facebook-f fa-lg"></i></a>
 
             <!-- Telegram -->
-            <a style="background-color: #3583e9;" href="https://t.me/metlebrustemov" role="button" class="btn btn-primary btn-floating m-1"><i
-                class="fab fa-telegram fa-lg"></i></a>
+            <a style="background-color: #3583e9;" href="https://t.me/metlebrustemov" role="button"
+              class="btn btn-primary btn-floating m-1"><i class="fab fa-telegram fa-lg"></i></a>
 
             <!-- Github-->
-            <a style="background-color: #262b33;" href="https://github.com/Metleb1996" role="button" class="btn btn-primary btn-floating m-1"><i
-                class="fab fa-github fa-lg"></i></a>
+            <a style="background-color: #262b33;" href="https://github.com/Metleb1996" role="button"
+              class="btn btn-primary btn-floating m-1"><i class="fab fa-github fa-lg"></i></a>
           </div>
           <div class="col-md-6 mb-4">
-            <p><strong>Proficient (6+ years):</strong></p>
+            <p><strong id="about_proficient"></strong></p>
             <div class="row">
               <div class="col-md-4 mb-4">
                 <i class="fab fa-html5 fa-3x m-2"></i>
@@ -182,47 +173,49 @@
                 <i class="fab fa-js fa-3x m-2"></i>
                 <p>JS</p>
               </div>
-              <p><strong>Expert (3+ years):</strong></p>
-              <div class="row">
-                <div class="col-md-3 mb-4">
-                  <i class="fab fa-android fa-3x m-2"></i>
-                  <p>Android</p>
-                </div>
-                <div class="col-md-3 mb-4">
-                  <i class="fab fa-java fa-3x m-2"></i>
-                  <p>Java</p>
-                </div>
-                <div class="col-md-3 mb-4">
-                  <i class="fab fa-python fa-3x m-2"></i>
-                  <p>Python</p>
-                </div>
-                <div class="col-md-3 mb-4">
-                  <i class="fas fa-terminal fa-3x m-2"></i>
-                  <p>Unix</p>
-                </div>
-                <p><strong>Learning (3+ years):</strong></p>
-                <div class="row">
-                  <div class="col-md-4 mb-4">
-                    <i class="fas fa-globe-americas fa-3x m-2"></i>
-                    <p>Python Web Frameworks</p>
-                  </div>
-                  <div class="col-md-4 mb-4">
-                    <i class="fab fa-php fa-3x m-2"></i>
-                    <p>Php</p>
-                  </div>
-                  <div class="col-md-4 mb-4">
-                    <i class="fas fa-database fa-3x m-2"></i>
-                    <p>Databases</p>
-                  </div>
-                </div>
+            </div>
+            <p><strong id="about_expert"></strong></p>
+            <div class="row">
+              <div class="col-md-3 mb-4">
+                <i class="fab fa-android fa-3x m-2"></i>
+                <p>Android</p>
+              </div>
+              <div class="col-md-3 mb-4">
+                <i class="fab fa-java fa-3x m-2"></i>
+                <p>Java</p>
+              </div>
+              <div class="col-md-3 mb-4">
+                <i class="fab fa-python fa-3x m-2"></i>
+                <p>Python</p>
+              </div>
+              <div class="col-md-3 mb-4">
+                <i class="fas fa-terminal fa-3x m-2"></i>
+                <p>Unix</p>
               </div>
             </div>
+            <p><strong id="about_learning"></strong></p>
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <i class="fas fa-globe-americas fa-3x m-2"></i>
+                <p>Python Web Frameworks</p>
+              </div>
+              <div class="col-md-4 mb-4">
+                <i class="fab fa-php fa-3x m-2"></i>
+                <p>Php</p>
+              </div>
+              <div class="col-md-4 mb-4">
+                <i class="fas fa-database fa-3x m-2"></i>
+                <p>Databases</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- Section: About me -->
       <hr class="my-5">
       <!-- Section: My projects -->
       <section id="projects" class="text-center">
-        <h3 class="my-5"><strong>My projects</strong></h3>
+        <h3 class="my-5"><strong id="projects_h3"></strong></h3>
         <div class="row">
           <div class="col-lg-4 col-md-12 mb-4">
             <div class="card">
@@ -234,9 +227,7 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title">W2Music</h5>
-                <p class="card-text">
-                  Music sharing system running on the server. Written with Python's Flask framework.
-                </p>
+                <p class="card-text" id="projects_w2m_text"></p>
                 <a href="https://w2music.herokuapp.com" class="btn btn-primary me-2">Live</a>
                 <a href="https://github.com/Metleb1996/world2_music" class="btn btn-secondary">Github</a>
               </div>
@@ -252,15 +243,13 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title">W2Password</h5>
-                <p class="card-text">
-                  A simple and easy to use application for reliable protection and management of user passwords for various accounts.
-                </p>
+                <p class="card-text" id="projects_w2p_text"></p>
                 <a href="https://github.com/Metleb1996/world2_password" class="btn btn-secondary">Github</a>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
-            
+
           </div>
         </div>
       </section>
@@ -268,30 +257,30 @@
       <hr class="my-5">
       <!-- Section: Contact -->
       <section id="contact" class="text-center">
-        <h3 class="my-5"><strong>Contact me</strong></h3>
+        <h3 class="my-5"><strong id="contact_h3"></strong></h3>
         <div class="row d-flex justify-content-center">
           <div class="col-md-8">
             <form>
               <!-- Name input -->
               <div class="form-outline mb-4">
                 <input type="text" id="form4Example1" class="form-control" />
-                <label class="form-label" for="form4Example1">Name</label>
+                <label class="form-label" for="form4Example1" id="contact_name"></label>
               </div>
 
               <!-- Email input -->
               <div class="form-outline mb-4">
                 <input type="email" id="form4Example2" class="form-control" />
-                <label class="form-label" for="form4Example2">Email address</label>
+                <label class="form-label" for="form4Example2" id="contact_email"></label>
               </div>
 
               <!-- Message input -->
               <div class="form-outline mb-4">
                 <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-                <label class="form-label" for="form4Example3">Message</label>
+                <label class="form-label" for="form4Example3" id="contact_message"></label>
               </div>
 
               <!-- Checkbox -->
-             <!--  <div class="form-check d-flex justify-content-center mb-4">
+              <!--  <div class="form-check d-flex justify-content-center mb-4">
                 <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
                 <label class="form-check-label" for="form4Example4">
                   Send me a copy of this message
@@ -299,7 +288,7 @@
               </div> -->
 
               <!-- Submit button -->
-              <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+              <button type="submit" class="btn btn-primary btn-block mb-4" id="contact_button"></button>
             </form>
           </div>
         </div>
@@ -320,7 +309,7 @@
   <!-- MDB -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Custom scripts -->
-  <script type="text/javascript"></script>
+  <script type="text/javascript" src="js/languages.js"></script>
 </body>
 
 </html>
